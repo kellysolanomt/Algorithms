@@ -8,7 +8,7 @@ def partition(array, left, right):
 
     ## Median of three pivote
     pivot = array[left]
-    mid = (right - left) // 2 + left
+    mid = (right + left) // 2
     sort = [array[left], array[mid], array[right]]
     sort.sort()
     if array[right] == sort[1]:
